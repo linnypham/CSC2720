@@ -1,5 +1,11 @@
 def climbingStairs(n):
-    if n in {1}:
-        return step
+    if n <= 1:
+        return n
+    else:
+        return climbingStairs(n-1) +climbingStairs(n-2)
 
+def countWays(s):
+    return climbingStairs(s + 1)
 
+a = int(input("Number of stairs:"))
+print(f'Ways to reach to the top: {countWays(a)}')

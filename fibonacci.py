@@ -4,5 +4,6 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-print(fibonacci(3))
+a = int(input('The fibonacci number at location: '))
+print(f'Fibonacci number: {fibonacci(a-1)}')
 
