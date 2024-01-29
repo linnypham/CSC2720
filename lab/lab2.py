@@ -18,7 +18,6 @@ def withoutArray(a, x):
     mid = 0
     high = len(a) - 1
 
-
     while mid <= high:
         if a[mid] < a[x]:
             a[low], a[mid] = a[mid], a[low]
