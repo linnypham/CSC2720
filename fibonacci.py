@@ -5,8 +5,8 @@ def fibonacci(n):
     else:
         fib[n] = fibonacci(n-1) + fibonacci(n-2)
         return fib[n]
-
-a = int(input('The fibonacci number at location: '))
-print(f'Fibonacci number: {fibonacci(a-1)}')
-print(fib)
+while True:
+    a = int(input('The fibonacci number at location: '))
+    print(f'Fibonacci number: {fibonacci(a)}')
+    print(fib)
 
