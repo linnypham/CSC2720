@@ -32,6 +32,7 @@ def withoutArray(a, x):
     return a
 
 
+
 a = [3,5,2,6,8,4,4,6,4,4,3]
 x = 5
 print(withArray(a,x))
