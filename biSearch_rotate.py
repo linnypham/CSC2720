@@ -1,7 +1,6 @@
 array = [4,5,6,7,10,0,1,2,3]
 target = 2
 
-
 left = 0
 right = len(array)-1
 
