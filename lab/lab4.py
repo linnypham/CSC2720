@@ -8,7 +8,7 @@ def partition(array,left,right):
             array[i], array[j] = array[j], array[i] #if the value is smaller than the pivot, switch the places of cursors i and j
 
     array[i+1], array[right] = array[right],array[i+1] #put the pivot into its intended place.
-    return i + 1
+    return i + 1 #return index of the pivot
 def quickSort(array,left,right):
     if left < right:
         pivot = partition(array, left, right)#partition the array to find the pivot index, also putting the pivot to its rightful place
@@ -35,22 +35,26 @@ array = []
 quickSort(array,0,len(array)-1)
 output = removeDuplicate(array)
 print(output)
+#expected output: Null input case, so no output
 
 #test2: 1 value
 array = [1]
 quickSort(array,0,len(array)-1)
 output = removeDuplicate(array)
 print(output)
+#expected output: [1]
 
 #test3: no duplicates
 array = [50, 11, 33, 21, 40]
 quickSort(array,0,len(array)-1)
 output = removeDuplicate(array)
 print(output)
+#expected output:[11,21,33,40,50]
 
 #test4: all duplicates
 array = [50,50,50,50,50,50,50,50]
 quickSort(array,0,len(array)-1)
 output = removeDuplicate(array)
 print(output)
+#expected output: [50]
 '''
