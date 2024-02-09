@@ -3,7 +3,7 @@ m = len(array1)
 
 array2 = [2, 6, 9, 11, 17, 21]
 n = len(array2)
-isIntegers = all(isinstance(x, int) for x in array1)
+
 
 array_loop = []
 array_binary = []
@@ -47,15 +47,15 @@ print(f'Linear: {array_linear}')
 '''
 test cases:
 
-if not array1 or array2:
+if not array1 or array2: #if input is null
     print("Input is Null")
-elif m == 1 and n == 1:
+elif m == 1 and n == 1: #if length of array is 1
     if array1[0] == array2[0]:
         print(array1)
     else:
         print('There are no duplicates')
         
-isIntegers = all(isinstance(x, int) for x in array1)
+isIntegers = all(isinstance(x, int) for x in array1) #if there are not integer values in the arrays
 if not isIntegers:
     print('There are not integers in Input')
 
