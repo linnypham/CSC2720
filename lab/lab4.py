@@ -28,7 +28,6 @@ array = [50, 11, 33, 21, 40, 50, 40, 40, 21]
 quickSort(array,0,len(array)-1)
 output = removeDuplicate(array)
 print(output)
-
 '''
 #test 1: Null
 array = []
