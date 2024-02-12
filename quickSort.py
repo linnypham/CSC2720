@@ -1,3 +1,5 @@
+#O(n^2)(worst case)
+#O(nlogn)(avg case)
 def partition(array,left,right):
     pivot = array[right] #choosing the last number as a pivot
     i = left - 1
