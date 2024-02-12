@@ -8,7 +8,10 @@ def loop(array1,array2):
         for j in range(n):
             if array1[i] == array2[j]: #if values are duplicate, append into an array, else go to the next value
                 array_loop.append(array1[i])
-    return array_loop
+    if not array_loop: #check if output is empty
+        return 'There are no duplicates'
+    else:
+        return array_loop
 
 def binary(array1,array2):
     if not array1 or not array2:
@@ -28,7 +31,10 @@ def binary(array1,array2):
                 r = m-1
             else:
                 l = m+1
-    return array_binary
+    if not array_binary:
+        return 'There are no duplicates'
+    else:
+        return array_binary
 
 def linear(array1,array2):
     if not array1 or not array2:
@@ -47,15 +53,18 @@ def linear(array1,array2):
             c1 += 1
         else:
             c2 += 1
-    return array_linear
+    if not array_linear:
+        return 'There are no duplicates'
+    else:
+        return array_linear
 
 array1 = [1, 6, 9, 10, 11, 21]
 array2 = [2, 6, 9, 11, 17, 21]
 print(f'Loop: {loop(array1,array2)}')
 print(f'Binary: {binary(array1,array2)}')
 print(f'Linear: {linear(array1,array2)}')
-'''
-print('Test1: Null input') #expected: print 'Null input case, so no output'
+
+'''print('Test1: Null input') #expected: print 'Null input case, so no output'
 array1 = []
 array2 = []
 print(f'Loop: {loop(array1,array2)}')
@@ -63,7 +72,7 @@ print(f'Binary: {binary(array1,array2)}')
 print(f'Linear: {linear(array1,array2)}')
 
 print('Test2: length of 1') #expected: either a null output, or output with 1 integer
-array1 = [11]
+array1 = [11]               #solution: check if the output is null and print 'There are no duplicates'
 array2 = [12]
 print(f'Loop: {loop(array1,array2)}')
 print(f'Binary: {binary(array1,array2)}')
@@ -76,7 +85,7 @@ print(f'Loop: {loop(array1,array2)}')
 print(f'Binary: {binary(array1,array2)}')
 print(f'Linear: {linear(array1,array2)}')
 
-print('Test4: Unsorted inputs') #exptedted: wrong ouputs
+print('Test4: Unsorted inputs') #exptedted: wrong outputs
 array1 = [4,3,5,2,1]            #solution: sort input arrays
 array2 = [7,4,6,5,9]
 print(f'Loop: {loop(array1,array2)}')
