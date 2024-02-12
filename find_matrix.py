@@ -3,7 +3,7 @@ matrix = [[3, 5, 10, 12],
           [22, 24, 26, 29],
           [30, 31, 35, 40]]
 target = 26
-
+def findMatrix(array,target):
 top = 0
 bottom = len(matrix) - 1
 
