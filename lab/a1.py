@@ -63,8 +63,8 @@ array2 = [2, 6, 9, 11, 17, 21]
 print(f'Loop: {loop(array1,array2)}')
 print(f'Binary: {binary(array1,array2)}')
 print(f'Linear: {linear(array1,array2)}')
-
-'''print('Test1: Null input') #expected: print 'Null input case, so no output'
+'''
+print('Test1: Null input') #expected: print 'Null input case, so no output'
 array1 = []
 array2 = []
 print(f'Loop: {loop(array1,array2)}')
@@ -78,14 +78,14 @@ print(f'Loop: {loop(array1,array2)}')
 print(f'Binary: {binary(array1,array2)}')
 print(f'Linear: {linear(array1,array2)}')
 
-print('Test3: Not integers') #expexted: output  a string array instead of integer
+print('Test3: Not integers') #expected: output  a string array instead of integer
 array1 = ['a','b','d','f','g']
 array2 = ['d','f','g','h','j']
 print(f'Loop: {loop(array1,array2)}')
 print(f'Binary: {binary(array1,array2)}')
 print(f'Linear: {linear(array1,array2)}')
 
-print('Test4: Unsorted inputs') #exptedted: wrong outputs
+print('Test4: Unsorted inputs') #expected: wrong outputs
 array1 = [4,3,5,2,1]            #solution: sort input arrays
 array2 = [7,4,6,5,9]
 print(f'Loop: {loop(array1,array2)}')
