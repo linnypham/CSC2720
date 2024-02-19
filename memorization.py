@@ -7,3 +7,6 @@ def longest(array):
             if array[i] < array[j]:
                 memo[i] = max(memo[i], 1 + memo[j])
     return max(memo)
+
+a = [71,72,74,73]
+print(longest(a))
