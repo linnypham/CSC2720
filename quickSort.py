@@ -1,11 +1,10 @@
 #O(n^2)(worst case)
 #O(nlogn)(avg case)
 def partition(array,left,right):
-    pivot = array[right] #choosing the last number as a pivot
     i = left - 1
 
     for j in range(left,right):
-        if array[j]<pivot:
+        if array[j]<array[right]:
             i = i+1 #moving the cursor i to the right
             array[i], array[j] = array[j], array[i] #if the value is smaller than the pivot, switch the places of cursors i and j
 

@@ -13,7 +13,7 @@ def withArray(a,x):
 
     return lower + equal + higher
 
-def withoutArray(a, x):
+'''def withoutArray(a, x):
     low = 0
     mid = 0
     high = len(a) - 1
@@ -29,11 +29,26 @@ def withoutArray(a, x):
             a[mid], a[high] = a[high], a[mid]
             high -= 1
 
-    return a
+    return a'''
 
+def withoutArray(a,x):
+    low = 0
+    mid = a[x]
+    high = len(a)-1
+    while low<=high:
+        if a[low]<mid:
+            low+=1
+        elif a[low]==mid:
+            low+=1
+            x+=1
+        elif a[low]>mid:
+            a[low],a[high]=a[high],a[low]
+            low+=1
+            high-=1
 
 
 a = [3,5,2,6,8,4,4,6,4,4,3]
 x = 5
 print(withArray(a,x))
-print(withoutArray(a,x))
+withoutArray(a,x)
+print(a)

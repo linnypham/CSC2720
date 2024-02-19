@@ -32,5 +32,6 @@ def mergeSort(array):
 
 array = [9,1,17,7,6,2,15,1]
 
-print(mergeSort(array))
+mergeSort(array)
+print(array)
 

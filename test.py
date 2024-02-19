@@ -1,21 +1,18 @@
-def partition(array,left,right):
-    i = left - 1
-    pivot = array[right]
-
-
-    for j in range(left,right):
-        if array[j]<pivot:
-            i +=1
-            array[i],array[j]= array[j],array[i]
-    array[i+1],array[right] = array[right],array[i+1]
-    return i+1
-
-def quickSort(array,left,right):
-    if left<right:
-        pivot = partition(array,left,right)
-        quickSort(array,left,pivot-1)
-        quickSort(array,pivot+1,right)
-
-array = [10,9,7,5,3,2,1]
-quickSort(array,0,len(array)-1)
-print(array)
+def smallest(array):
+    left = 0
+    right = len(array)-1
+    curr_min = array[0]
+    while left<=right:
+       if array[left]<=array[right]:
+           curr_min = min(curr_min, array[left])
+           left+=1
+       else:
+           mid = left+(right-left)//2
+           curr_min = curr_min = min(curr_min, array[mid])
+           if array[left]<= array[mid]:
+               left = mid +1
+           else:
+               right = mid - 1
+    return curr_min
+array = [6,7,8,9,1,2,3,4,5]
+print(smallest(array))
