@@ -1,0 +1,7 @@
+structure: data representation in memory
+
+base address: where the structure begin
+
+specific index access
+
+Base address + (data type memory cost)*i

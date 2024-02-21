@@ -8,12 +8,12 @@ def searchRotate(array,target):
             return mid+1
 
         if array[left]<= array[mid]: #left
-            if target >array[mid] or target <array[left]:
+            if array[mid] < target or target <array[left]:
                 left = mid+1
             else:
                 right = mid-1
         else:
-            if target<array[mid] or target>array[right]:
+            if array[right] < target or target < array[mid]:
                 right = mid -1
             else:
                 left = mid + 1
