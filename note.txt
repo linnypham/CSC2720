@@ -4,4 +4,9 @@ base address: where the structure begin
 
 specific index access
 
+find a value in array with index
 Base address + (data type memory cost)*i
+
+quicksort 
+O(n^2)(worst case)
+O(nlogn)(avg case)
