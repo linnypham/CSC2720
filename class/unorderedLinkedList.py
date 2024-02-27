@@ -74,16 +74,16 @@ mylist.add(12)
 
 
 print(mylist.size())
-print(mylist.search(93))
-print(mylist.search(100))
+print(mylist.search(9))
+print(mylist.search(10))
 
 mylist.add(100)
 print(mylist.search(100))
 print(mylist.size())
 
-mylist.remove(54)
+mylist.remove(12)
 print(mylist.size())
-mylist.remove(93)
+mylist.remove(15)
 print(mylist.size())
 mylist.remove(31)
 print(mylist.size())
