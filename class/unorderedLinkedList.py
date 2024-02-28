@@ -65,26 +65,39 @@ class UnorderedList:
         else:
             previous.setNext(current.getNext())
 
+    def flipList(self):
+        current = self.head
+        previous = None
+        while current:
+            temp = current.next
+            current.next = previous
+            previous = current
+            current  = temp
+        self.head = previous
+
+    def circleCheck(self):
+        slow, fast = self.head, self.head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return True
+        return False
+    def printList(self):
+        temp = self.head
+        while (temp):
+            print(temp.data, " -> ", end='')
+            temp = temp.next
+        print("")
+
 mylist = UnorderedList()
 
-mylist.add(9)
-mylist.add(10)
+mylist.add(5)
 mylist.add(15)
-mylist.add(12)
+mylist.add(7)
+mylist.add(9)
+mylist.flipList()
+mylist.printList()
 
 
-print(mylist.size())
-print(mylist.search(9))
-print(mylist.search(10))
 
-mylist.add(100)
-print(mylist.search(100))
-print(mylist.size())
-
-mylist.remove(12)
-print(mylist.size())
-mylist.remove(15)
-print(mylist.size())
-mylist.remove(31)
-print(mylist.size())
-print(mylist.search(93))
