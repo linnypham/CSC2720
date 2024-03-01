@@ -96,8 +96,7 @@ mylist.add(5)
 mylist.add(15)
 mylist.add(7)
 mylist.add(9)
-mylist.flipList()
-print(mylist.circleCheck())
+
 mylist.printList()
 
 
