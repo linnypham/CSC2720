@@ -51,3 +51,24 @@ print(output)
 '''Since deque is similar to a double linked-list, 
 you can traverse through the list, appending, and popping  from both sides instead of 1 side.
 So deque will be faster in Time complexity'''
+
+'''
+#test1: Input is null
+input = " "
+output = calculator(input)
+print(output)
+
+#test2: Input is 1 number
+input = "10"
+output = calculator(input)
+print(output)
+
+#test3: Inputs are just operators
+input = "+ - * /"
+output = calculator(input)
+print(output)
+
+#test4: Inputs are letters
+input = "example text"
+output = calculator(input)
+print(output)'''
