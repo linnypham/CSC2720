@@ -36,10 +36,8 @@ def calculator(input):
                     calculate(operators, operand)
                 operators.append(equation[i]) #append operator into operators
             i += 1
-
         while len(operators) > 0:
             calculate(operators, operand)
-
         return operand[0]
 
     result = evaluate(input)
