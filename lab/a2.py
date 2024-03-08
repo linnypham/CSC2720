@@ -26,9 +26,6 @@ def calculator(input):
         operators = [] #store operators
         i = 0 #counters
         while i < len(equation):
-            if equation[i] == ' ':
-                i += 1
-                continue
             if equation[i].isdigit(): #append digit into operand
                 operand.append(int(equation[i]))
             elif equation[i] in '+-*/': #check operators
@@ -48,7 +45,12 @@ input = "10 * 2 - 15"
 output = calculator(input)
 print(output)
 
-'''Since deque is similar to a double linked-list, 
+'''
+Time: O(n)
+Space: O(n)
+'''
+
+'''Since deque allow user to access from both sides, 
 you can traverse through the list, appending, and popping  from both sides instead of 1 side.
 So deque will be faster in Time complexity'''
 
