@@ -10,3 +10,21 @@ Base address + (data type memory cost)*i
 quicksort 
 O(n^2)(worst case)
 O(nlogn)(avg case)
+
+maxValue with queue
+max q enque(i)
+while i > tail element of max Q:
+	remove from tail of maxq
+enque i to the max q
+
+deque(i)
+if mainQ(front)==maxQ(front)
+    remove from bot Qs
+else:
+    remove from mainQ
+
+  harsh collision: whey harsh keys evaluate to the same value
+
+classes:
+    algorithm
+    plc
