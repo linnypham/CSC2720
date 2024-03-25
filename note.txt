@@ -28,3 +28,28 @@ else:
 classes:
     algorithm
     plc
+
+Null is a subset of a tree
+
+tree height balance, if the different in the height between the left subtree and right subtree
+is no more than 1 for each and every node
+
+pre order
+    process node
+    visit lst
+    visit rst
+in order
+    visit lst
+    process node
+    visit rst
+post order
+    visit lst
+    visit rst
+    process node
+level order
+    level by level
+
+
+
+call stack:
+
