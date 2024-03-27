@@ -49,7 +49,18 @@ post order
 level order
     level by level
 
-
-
 call stack:
+binary tree: at most 2 child nodes
+binary search tree properties:
+    1) Node level:
+    left child node <= root
+    right child node > root
+    2)Sub tree level:
+    property 1 is recursively applied to all subtrees
 
+    time expected(high balance): O(logn)
+    worse case time: O(n)
+
+garbage collector: mark and sweep
+
+delete value of root: lowest value of the right subtree

@@ -5,19 +5,19 @@ class TreeNode:
         self.right = right
         self.val = val
 
-'''
-def inOrder(root):#recursive
-    list = []
-    if root == None:
-        return
-    else:
-        inOrder(root.left)
-        list.append(root.val)
-        inOrder(root.right)
-    inOrder(root)
-    return list
-'''
-    def inOrder(root):  #interative
+    '''
+    def inOrder(root):#recursive
+        list = []
+        if root == None:
+            return
+        else:
+            inOrder(root.left)
+            list.append(root.val)
+            inOrder(root.right)
+        inOrder(root)
+        return list
+    '''
+    def inOrder(self,root):  #interative
         IOT = []
         cs = deque()
         current = root
