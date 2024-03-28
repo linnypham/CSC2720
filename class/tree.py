@@ -6,7 +6,7 @@ class TreeNode:
         self.val = val
 
     '''
-    def inOrder(root):#recursive
+    def inOrder(self,root):#recursive
         list = []
         if root == None:
             return
@@ -14,7 +14,6 @@ class TreeNode:
             inOrder(root.left)
             list.append(root.val)
             inOrder(root.right)
-        inOrder(root)
         return list
     '''
     def inOrder(self,root):  #interative
@@ -31,7 +30,7 @@ class TreeNode:
                 current = current.right
         return IOT
 
-    def levelOrder(root):
+    def levelOrder(self,root):
         LOT = []
         q = deque()
         q.append(root)
@@ -45,3 +44,8 @@ class TreeNode:
         return LOT
 
 root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+root.left.left = TreeNode(4)
+root.left.right = TreeNode(5)
+
