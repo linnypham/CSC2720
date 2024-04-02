@@ -64,3 +64,7 @@ binary search tree properties:
 garbage collector: mark and sweep
 
 delete value of root: lowest value of the right subtree
+
+tree are grapgh that are connected, and dont have cycle
+abstract data type vs data structure:
+	abstract:
