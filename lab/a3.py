@@ -11,22 +11,22 @@ def inOrder(root): #In-order traversal
     current = root
     while current or len(cs) > 0:
         if current:
-            cs.append(current) #append value in call stack
+            cs.append(current) #append dataue in call stack
             current = current.left # move left
         else:
-            current = cs.pop() #pop value in call stack
-            IOT.append(current.data) #appen vallue in IOT list
+            current = cs.pop() #pop dataue in call stack
+            IOT.append(current.data) #appen datalue in IOT list
             current = current.right # move right
     return IOT
-def smallestNode(root): #find the node with lowest value
+def smallestNode(root): #find the node with lowest dataue
     current = root
-    while current.left: #keep  going the the left of left subtree to find smallest value
+    while current.left: #keep  going the the left of left subtree to find smallest dataue
         current = current.left
     return current
 def deleteRoot(root):
-    newNode = smallestNode(root.right) #find the smallest value of right subtree of the root
-    root.data = newNode.data #replace root value with new value
-    newNode.data = None #replace the value of smallest Node to Null
+    newNode = smallestNode(root.right) #find the smallest dataue of right subtree of the root
+    root.data = newNode.data #replace root dataue with new dataue
+    newNode.data = None #replace the dataue of smallest Node to Null
 
 root = Node(4)
 root.left = Node(2)
@@ -38,6 +38,7 @@ root.right.right = Node(7)
 deleteRoot(root)
 output = inOrder(root)
 print(output)
+
 
 '''test1: Node is null
 root = Node()
