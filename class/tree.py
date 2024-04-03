@@ -1,9 +1,10 @@
 from collections import deque
 class TreeNode:
-    def __init__(self,left=None, right=None, val=0):
-        self.left = left
-        self.right = right
-        self.val = val
+# A function to create a new node
+    def __init__(self, key):
+        self.val = key
+        self.left = None
+        self.right = None
 
 '''
 def inOrder(root):#recursive
@@ -48,4 +49,5 @@ root.left = TreeNode(2)
 root.right = TreeNode(3)
 root.left.left = TreeNode(4)
 root.left.right = TreeNode(5)
+print(levelOrder(root))
 
