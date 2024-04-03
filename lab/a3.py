@@ -11,23 +11,25 @@ def inOrder(root): #In-order traversal
     current = root
     while current or len(cs) > 0:
         if current:
-            cs.append(current) #append dataue in call stack
+            cs.append(current) #append data in call stack
             current = current.left # move left
         else:
-            current = cs.pop() #pop dataue in call stack
-            IOT.append(current.data) #appen datalue in IOT list
+            current = cs.pop() #pop data in call stack
+            IOT.append(current.data) #append data in IOT list
             current = current.right # move right
     return IOT
-def smallestNode(root): #find the node with lowest dataue
+def smallestNode(root): #find the node with lowest data
     current = root
-    while current.left: #keep  going the the left of left subtree to find smallest dataue
+    while current.left: #keep  going the the left of left subtree to find smallest data
         current = current.left
     return current
 def deleteRoot(root):
-    newNode = smallestNode(root.right) #find the smallest dataue of right subtree of the root
-    root.data = newNode.data #replace root dataue with new dataue
-    newNode.data = None #replace the dataue of smallest Node to Null
-
+    smallNode = smallestNode(root.right) #find the smallest data of right subtree of the root
+    root.data = smallNode.data #replace root data with new data
+    current = root.right
+    while current.left.data != root.data: #delete smallNode
+        current = current.left
+    current.left = None
 
 root = Node(4)
 root.left = Node(2)
@@ -36,6 +38,10 @@ root.left.left = Node(1)
 root.left.right = Node(3)
 root.right.left = Node(5)
 root.right.right = Node(7)
+print(f'Before delete Root {root.data}:')
+output = inOrder(root)
+print(output)
+print(f'After delete Root {root.data}:')
 deleteRoot(root)
 output = inOrder(root)
 print(output)
