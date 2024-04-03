@@ -28,6 +28,7 @@ def deleteRoot(root):
     root.data = newNode.data #replace root dataue with new dataue
     newNode.data = None #replace the dataue of smallest Node to Null
 
+
 root = Node(4)
 root.left = Node(2)
 root.right = Node(6)
