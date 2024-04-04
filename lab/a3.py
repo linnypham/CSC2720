@@ -26,10 +26,14 @@ def smallestNode(root): #find the node with lowest data
 def deleteRoot(root):
     smallNode = smallestNode(root.right) #find the smallest data of right subtree of the root
     root.data = smallNode.data #replace root data with new data
-    current = root.right
-    while current.left.data != root.data: #delete smallNode
-        current = current.left
-    current.left = None
+    if smallNode.right:#if smallnode has right child, replace node with right child
+        smallNode.data = smallNode.right.data
+        smallNode.right = None
+    else:#if no childs delete smallNode
+        current = root.right
+        while current.left.data != root.data:
+            current = current.left
+        current.left = None
 
 root = Node(4)
 root.left = Node(2)
