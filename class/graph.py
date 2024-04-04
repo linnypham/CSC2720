@@ -16,7 +16,15 @@ def DFS(source,graph):
             stack.append(j)
             visited.add(j)
    return DFS
-
+'''
+def DFS_recursive(source, graph, visited=None):
+    if visited is None:
+        visited = set()
+    visited.add(source)
+    for neighbor in graph.get(source, []):
+        if neighbor not in visited:
+            DFS_recursive(neighbor, graph, visited)
+    return visited'''
 #Breadth-First Search
 def BFS(source,graph):
    BFS = []
@@ -38,8 +46,10 @@ graph = {1: [2,3],
          4: [2,6],
          5: [6],
          6: []}
-output1 = DFS(1,graph)
-output2 = BFS(1,graph)
+source = 1
+output1 = DFS(source,graph)
+output2 = BFS(source,graph)
 print('DFS:')
 print(output1)
-
+print('BFS:')
+print(output2)
