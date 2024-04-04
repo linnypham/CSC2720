@@ -65,6 +65,9 @@ garbage collector: mark and sweep
 
 delete value of root: lowest value of the right subtree
 
-tree are grapgh that are connected, and dont have cycle
+tree are graph that are connected, and dont have cycle
 abstract data type vs data structure:
 	abstract:
+
+vertex list |v|
+edge list |E|:
