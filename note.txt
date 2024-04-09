@@ -71,3 +71,17 @@ abstract data type vs data structure:
 
 vertex list |v|
 edge list |E|:
+
+heap/Priority Q/ Heap Q
+1. Node level
+
+2. Subtree level property
+Max heap:
+value of root > child
+complete binary tree: level above the leef node, the level are full
+leef node level populate from left to right
+
+for any node @ index i
+lc = 2i+1
+rc = 2i+1
+parent(i) = (i-1)/2
