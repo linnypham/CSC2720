@@ -10,7 +10,7 @@ class Graph:
         if visited is None: #create set to check for visited nodes
             visited = set()
         if DFS is None:
-            DFS = [source]
+            DFS = [source] #traversal list for output
         visited.add(source) #source at the beginning
         for j in self.adj[source]:
             if j not in visited: #if the node is not visited yet, visit it
