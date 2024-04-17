@@ -91,3 +91,20 @@ parent(i) = (i-1)/2 (lower ceiling)
 min heap::
 1. child > root
 2. child subtree > root
+
+book recommendation:
+    CTCI: CRACKING the CODING INTERVIEW (beginner-friendly, java)
+    EPI: Elements of Programming Interviews (not beginner-friendly,have python)
+    LeetCode:
+courses recommendation:
+    system level programming: C + Linux(Bash)
+    computer org: Assembly + Microprocessors
+
+    Algorithm
+    Programming Language Concept: elective
+    operating system: elective
+
+    machine learning:
+        linear algebra 2
+        Mathematical Stat 1 & 2
+        Optimization

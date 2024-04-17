@@ -41,7 +41,7 @@ def calculator(input):
     return result
 
 # Example usage:
-input = "10 * 2 - 15"
+input = input('Please input your formular:')
 output = calculator(input)
 print(output)
 
