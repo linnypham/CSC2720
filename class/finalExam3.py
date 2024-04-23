@@ -24,18 +24,6 @@ def smallestK(root, k):
             current = current.right
     return False
 
-def smallestKrecursive(root, k):
-    def inorder(node):
-        if node is None or count >= k:
-            return
-        inorder(node.left)
-        count += 1
-        if count == k:
-            result = node.data
-            return root.data
-        inorder(node.right)
-
-
 root = Node(400)
 root.left = Node(200)
 root.right = Node(600)

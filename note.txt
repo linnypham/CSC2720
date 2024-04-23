@@ -101,8 +101,8 @@ courses recommendation:
     computer org: Assembly + Microprocessors
 
     Algorithm
-    Programming Language Concept: elective
-    operating system: elective
+    Programming Language Concept: elective : CSc 2720, CSc 3210, and CSc 3320
+    operating system: elective CSc 3320
 
     machine learning:
         linear algebra 2
